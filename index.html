@@ -1,48 +1,104 @@
-<h2>Présentation</h2>
+<!DOCTYPE html>
+<html>
+<title>Tech-meetup</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
 
-Nous sommes un groupe ouvert à tout le monde, axé sur le partage de connaissance et d’informations dans le domaine du développement informatique et tout ce qui l’entour. (Code, Gestion de Projet, Outils, DevOps, SI, etc ...) 
+<style>
+  body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    text-align: justify;
+  }
+  header {
+    background-color: black;
+    height: 20em;
+  }
 
-Toutes personnes exprimant de l'intérêt pour ces sujets sont les bienvenues!
+</style>
+<body>
 
-Le but est de se rencontrer, de partager et de s’améliorer entre Technopolitain et ainsi de tisser des liens inter-entreprise.
+<header class="w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Tech<br>Meetup</span>
+  </div>
+</header>
 
-L’objectif de ces échanges est de faciliter sa veille technique, sa formation professionnelle et de garder un esprit ouvert sur ce vaste monde
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Présentation</span></h5>
+    <p>Nous sommes un groupe ouvert à tout le monde, axé sur le <u>partage</u> de connaissance et d’informations dans le domaine du développement informatique et tout ce qui l’entour. (Code, Gestion de Projet, Outils, DevOps, SI, etc ...)</p>
 
-Nous allons réaliser régulièrement divers événements tels que :
-<ul>
-  <li>Conférence sur des Tech/Outils/Stack</li>
-  <li>Retour d’expérience sur un sujet/test d’outils</li>
-  <li>Passer de bons moments (bar/jeu)</li>
-  <li>Des challenges techniques (création d’outils, Hackathon)</li>
-</ul>
-<h2>A venir</h2>
-(les dates peuvent encore changer)
+    <p>Toutes personnes exprimant de l'intérêt pour ces sujets sont les bienvenues! Le but est de se <u>rencontrer</u>, de partager et de s’améliorer entre Technopolitain et ainsi de tisser des liens inter-entreprise.</p>
 
-<ul>
-  <li>10 Mars : Lancement</li>
-  <li>25 ou 26 Mars : Présentation du projet</li>
-  <li>8 ou 9 Avril : Présentation de retour expérience</li>
-  <li>22 ou 23 Avril : Sortie Bar</li>
-  <li>07 ou 08 Mai : Retour code challenge </li>
-  <li>TBD</li>
-</ul>
+    <p>L’objectif de ces <u>échanges</u> est de faciliter sa veille technique, sa formation professionnelle et de garder un esprit ouvert sur ce vaste monde.</p>
 
-<h2>Venez nous parler !</h2>
+    <p> Nous allons réaliser régulièrement divers événements tels que :</p>
+    <ul>
+      <li>Conférence sur des Tech/Outils/Stack</li>
+      <li>Retour d’expérience sur un sujet/test d’outils</li>
+      <li>Passer de bons moments (bar/jeu)</li>
+      <li>Des challenges techniques (création d’outils, Hackathon)</li>
+    </ul>
+  </div>
+</div>
 
-<b>Slack url :</b> demander le channel sur le Slack de la Technopole de l’aube en champagne #tech-meetup
-<b>Discord url :</b> nous demander, lien disponible sur le Slack
+<!-- What next -->
+<div class="w3-container" id="what_new">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">A venir</span></h5>
+    <p>(les dates peuvent changer)</p>
+    <ul>
+      <li>10 Mars : Lancement</li>
+      <li>25 ou 26 Mars : Présentation du projet</li>
+      <li>8 ou 9 Avril : Présentation de retour expérience</li>
+      <li>22 ou 23 Avril : Sortie Bar</li>
+      <li>07 ou 08 Mai : Retour code challenge </li>
+      <li>TBD</li>
+    </ul>
+  </div>
+</div>
 
+<!-- channels -->
+<div class="w3-container" id="channels">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Venez nous parler !</span></h5>
+    <p>Slack url : demander le channel sur le Slack de la Technopole de l’aube en champagne <b>#tech-meetup</b></p>
+    <p>Discord url : nous demander, lien disponible sur le Slack</p>
+  </div>
+</div>
 
-<h2>Contributeurs</h2>
+<!-- contributors -->
+<div class="w3-container" id="contributors">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Contributeurs</span></h5>
+    <p>Remplir le fichier json (https://github.com/tech-meetup-10/site/blob/master/contributors.json) en suivant le pattern : </p>
 
-Remplir le fichier json (https://github.com/tech-meetup-10/site/blob/master/contributors.json) en suivant le pattern :
-<code>
-{
-  "prenom": "votre_prenom",
-  "nom": "votre_nom",
-  "entreprise": "votre entreprise",
-  "job_title": "votre_fonction_dans_votre_entreprise",
-  "stack": ["stack", "sur", "lesquelles", "vous", "êtes", "à", "l'aise"]
-}
-</code>
+    <code>
+      <pre>
+        {
+          "prenom": "votre_prenom",
+          "nom": "votre_nom",
+          "entreprise": "votre entreprise",
+          "job_title": "votre_fonction_dans_votre_entreprise",
+          "stack": ["stack", "sur", "lesquelles", "vous", "êtes", "à", "l'aise"]
+        }
+      </pre>
+    </code>
 
+    <div id="contributors-list">
+      <p>TBD</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Tech Meetup</a></p>
+</footer>
+
+</body>
+</html>
